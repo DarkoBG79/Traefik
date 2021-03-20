@@ -9,6 +9,7 @@
 - hosts: localhost
   gather_facts: True
   tasks:
+  
     # BASIC TASKS ######################################################
     - name: 'Including cron job'
       include_tasks: '/opt/traefik/provider.yml'
