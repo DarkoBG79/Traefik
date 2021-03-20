@@ -83,10 +83,9 @@
           - /var/run/docker.sock:/var/run/docker.sock:ro
           - /etc/localtime:/etc/localtime:ro
           - /opt/appdata/traefik/traefik.toml:/etc/traefik/traefik.toml:ro
-          - /opt/appdata/traefik/acme:/etc/traefik/acme 
+          - /opt/appdata/traefik/acme:/etc/traefik/acme
           - /opt/appdata/traefik/rules:/etc/traefik/rules
-
-     restart_policy: unless-stopped
+        restart_policy: unless-stopped
         state: started
         networks:
           - name: plexguide
