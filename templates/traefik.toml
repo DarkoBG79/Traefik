@@ -74,7 +74,7 @@ network = "plexguide"
   #
   dashboard = true
 
-[Log]
+[traefikLog]
   filePath = "/opt/appdata/traefik/logs/traefik.log"
 
 [accessLog]
