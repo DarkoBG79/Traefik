@@ -61,3 +61,24 @@ domain = "{{domain.stdout}}"
 watch = true
 exposedbydefault = false
 network = "plexguide"
+
+[file]
+  directory = "/etc/traefik/rules/"
+  watch = true
+
+[api]
+  # Dashboard
+  #
+  # Optional
+  # Default: true
+  #
+  dashboard = true
+
+[traefikLog]
+  filePath = "/opt/appdata/traefik/logs/traefik.log"
+
+[accessLog]
+  filePath = "/opt/appdata/traefik/logs/access.log"
+  bufferingSize = 100
+
+
